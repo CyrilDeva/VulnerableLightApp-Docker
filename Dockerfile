@@ -14,6 +14,6 @@ RUN apt update && \
    sudo apt install -y aspnetcore-runtime-8.0 dotnet-runtime-8.0
 
 WORKDIR /app
-RUN git clone https://github.com/Aif4thah/VulnerableLightApp.git
+RUN git clone https://github.com/CyrilDeva/VulnerableLightApp.git
 WORKDIR /app/VulnerableLightApp
 CMD ["dotnet", "run" , "--url=https://0.0.0.0:3000" ]
