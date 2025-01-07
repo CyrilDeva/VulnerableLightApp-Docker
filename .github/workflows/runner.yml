@@ -39,4 +39,4 @@ jobs:
 
     # Test the application
     - name: Test the application
-      run: curl -k https://127.0.0.1:3000
+      run: curl -k http://127.0.0.1:3000
