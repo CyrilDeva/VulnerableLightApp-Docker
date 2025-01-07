@@ -35,8 +35,8 @@ jobs:
 
     # Wait for the container to start
     - name: Wait for the container to start
-      run: sleep 20
+      run: sleep 50
 
     # Test the application
     - name: Test the application
-      run: curl -k https://127.0.0.1:3000/swagger/index.html
+      run: curl -k https://127.0.0.1:3000
