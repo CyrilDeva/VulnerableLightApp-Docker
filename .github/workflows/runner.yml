@@ -35,7 +35,7 @@ jobs:
 
     # Wait for the container to start
     - name: Wait for the container to start
-      run: sleep 50
+      run: sleep 66
 
     # Test the application
     - name: Test the application
