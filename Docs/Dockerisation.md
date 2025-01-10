@@ -38,7 +38,7 @@ CMD ["dotnet", "run", "--url=https://0.0.0.0:3000"]
 
 •	**Mise à jour et installation des outils** : La commande apt met à jour le système et installe des outils essentiels comme wget, sudo, et git.
 
-•	**Ajout du support pour .NET** : 
+•	**Ajout du support pour .NET** : https://learn.microsoft.com/fr-fr/dotnet/core/install/linux-debian?tabs=dotnet9
     Le fichier packages-microsoft-prod.deb est récupéré pour ajouter le dépôt Microsoft.
     Ce dépôt permet l'installation de l'environnement .NET nécessaire à l'exécution de l'application.
 
