@@ -48,8 +48,8 @@ CMD ["dotnet", "run", "--url=https://0.0.0.0:3000"]
 
 •	**Commande de lancement** : L'application est lancée en utilisant la commande dotnet run avec l'option -url pour écouter sur l'adresse 0.0.0.0 au port 3000.
 
-## Test
-Une fois le fichier Dockerfile créé, les tests suivants ont été effectués :
+## Création de l'image à partir du Dockerfile
+Une fois le fichier Dockerfile créé à la racine du code, on construit l'image :
 1.	**Construction de l'image Docker avec la commande** :
 
     `docker build -t vulnerable-light-app .`
@@ -66,13 +66,16 @@ Le -t est pour préciser un tag, ici on ne le précise pas donc par defaut le ta
 http://localhost:3000.
 
 
-4.  **Upload sur DockerHub**
-    docker push <DOCKER_USERNAME>/vulnerable-light-app
+
+## Upload sur DockerHub
+
+`docker push cyrildeva/vulnerable-light-app`
 
 Ce fichier Dockerfile a permis de préparer une image prête pour le déploiement de l'application sur Docker Hub.
 (https://hub.docker.com/r/cyrildeva/vulnerablelightapp-docker)
 
 Enfin, pour lancer l'application depuis DockerHub on peut faire :
-`docker pull cyrildeva/vulnerablelightapp-docker`
+
+`docker run -d --name=vulnerablelightapp -p 3000:3000 cyrildeva/vulnerablelightapp-docker`
 
 
