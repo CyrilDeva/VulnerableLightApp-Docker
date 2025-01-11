@@ -1,4 +1,4 @@
-name: Deploy vulnerablelightapp
+name: Deploy vulnerablelightapp on self-hosted runner
 
 on:
   push:
